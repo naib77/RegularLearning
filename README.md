@@ -1,4 +1,4 @@
 # RegularLearning
 Learning Topics
-    Java
-    Git
+* Java
+* Git

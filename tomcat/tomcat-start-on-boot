@@ -1,1 +1,30 @@
-dafasdf
+Ceate a file /etc/init.d/tomcat7
+
+# See the tomct7 file for detail
+
+# Give permission for the file 
+chmod 777 tomcat7
+
+
+
+# Create symlinks to start/stop/restart tomcat 
+sudo ln -s /etc/init.d/tomcat7 /etc/rc2.d/S87tomcat7
+
+# check chkconfig list 
+chkconfig --list
+
+# add tomcat7 to chkconfig to list
+chkconfig --add tomcat7
+
+# chkconfig tomcat7 on
+
+#commands are working or not
+
+to start
+/etc/init.d/tomcat start
+
+To stop:
+/etc/int.d/tomcat stop
+
+https://geekflare.com/how-to-auto-start-services-on-boot-in-linux/
+
